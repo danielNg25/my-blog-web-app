@@ -4,18 +4,15 @@ export default function TopBar() {
     return (
         <div className="top">
             <div className="topLeft">
-                <i className="topIcon fab fa-facebook-square"></i>
-                <i className="topIcon fab fa-twitter-square"></i>
-                <i className="topIcon fab fa-pinterest-square"></i>
-                <i className="topIcon fab fa-instagram-square"></i>
+                <h3 className="topTitle">Blog của Trường</h3>
             </div>
             <div className="topCenter">
                 <ul className="topList">
                     <li className='topListItem'>HOME</li>
+                    <li className="topListItem">IT</li>
+                    <li className="topListItem">ECONOMY</li>
+                    <li className="topListItem">OTHER</li>
                     <li className="topListItem">ABOUT</li>
-                    <li className="topListItem">CONTACT</li>
-                    <li className="topListItem">WRITE</li>
-                    <li className="topListItem">LOGOUT</li>
                 </ul>
             </div>
             <div className="topRight">
