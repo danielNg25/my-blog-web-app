@@ -1,6 +1,7 @@
 .sidebar {
     flex: 2;
     padding: 1%;
+    height: 100vh;
     background-color: lightgrey;
     display: flex;
     flex-direction: column;
@@ -49,9 +50,11 @@
     margin-top: 10%;
     cursor: pointer;
 }
-.sidebarListItem:hover{
+
+.sidebarListItem:hover {
     color: grey;
 }
+
 .sidebarSocial {
     margin-top: 10%;
     width: 100%;
@@ -66,6 +69,6 @@
     cursor: pointer;
 }
 
-.sidebarIcon:hover{
+.sidebarIcon:hover {
     color: grey;
 }

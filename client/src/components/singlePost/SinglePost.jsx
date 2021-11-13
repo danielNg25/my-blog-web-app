@@ -1,16 +1,32 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 import "./singlePost.css";
 
 export default function SinglePost() {
+  const location = useLocation();
+  const path = location.pathname.split("/")[2];
+  const [post,setPost] = useState({});
+  useEffect(() => {
+    const getPost = async() => {
+      const res = await axios.get("/posts/" + path);
+      setPost(res.data);
+    }
+    getPost();
+  }, [path])
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        <img
-          src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
+        {post.photo &&(
+          <img
+          src={post.photo}
           alt=""
           className="singlePostImg"
         />
+        )}
+        
         <h1 className="singlePostTitle">
-          Lorem ipsum dolor sit amet.
+          {post.title}
           <div className="singlePostEdit">
             <i className="singlePostIcon fas fa-edit"></i>
             <i className="singlePostIcon fas fa-trash-alt"></i>
@@ -18,31 +34,12 @@ export default function SinglePost() {
         </h1>
         <div className="singlePostInfo">
           <span className="singlePostAuthor">
-            Author: <b>Ndtr</b>
+            Author: <b>{post.username}</b>
           </span>
-          <span className="singlePostDate">1 hour ago</span>
+          <span className="singlePostDate">{new Date(post.createdAt).toDateString()}</span>
         </div>
         <p className="singlePostDesc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-          explicabo. Amet sint alias doloribus inventore vel iusto fuga nostrum,
-          quae consectetur esse quia enim incidunt. Beatae ullam quam corporis
-          rerum.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-          explicabo. Amet sint alias doloribus inventore vel iusto fuga nostrum,
-          quae consectetur esse quia enim incidunt. Beatae ullam quam corporis
-          rerum.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-          explicabo. Amet sint alias doloribus inventore vel iusto fuga nostrum,
-          quae consectetur esse quia enim incidunt. Beatae ullam quam corporis
-          rerum.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-          explicabo. Amet sint alias doloribus inventore vel iusto fuga nostrum,
-          quae consectetur esse quia enim incidunt. Beatae ullam quam corporis
-          rerum.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-          explicabo. Amet sint alias doloribus inventore vel iusto fuga nostrum,
-          quae consectetur esse quia enim incidunt. Beatae ullam quam corporis
-          rerum.
+          {post.desc}
         </p>
       </div>
     </div>

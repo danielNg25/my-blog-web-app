@@ -6,7 +6,7 @@ export default function SidebarRight() {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
-          src="./myAvatar.jpg"
+          src="https://i.ibb.co/NK7VNmZ/myAvatar.jpg"
           alt=""
         />
         <p>
