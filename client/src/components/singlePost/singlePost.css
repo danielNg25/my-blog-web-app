@@ -1,5 +1,5 @@
 .singlePost{
-    flex: 9;
+    flex: 10;
 }
 
 .singlePostWrapper{
@@ -55,7 +55,7 @@
 }
 
 .singlePostDesc::first-letter{
-    margin-left: 20px;
+    margin: 5%;
     font-size: 30px;
     font-weight: 600;
 }
