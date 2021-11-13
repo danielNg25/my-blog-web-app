@@ -52,6 +52,10 @@
     cursor: pointer;
 }
 
+.topListItem:hover {
+    color: lightgrey;
+}
+
 .topSearchIcon {
     font-size: 18px;
     color: white;
@@ -59,7 +63,7 @@
     margin-left: 15px;
 }
 
-.topTitle{
+.topTitle {
     color: white;
     cursor: pointer;
 }

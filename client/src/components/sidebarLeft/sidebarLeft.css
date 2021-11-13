@@ -1,0 +1,53 @@
+.sidebarLeft {
+    flex: 2;
+    padding: 1%;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarLeftItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarLeftTitle {
+    margin: 2%;
+    padding: 2%;
+    width: 80%;
+    border-top: 1px solid #a7a4a4;
+    border-bottom: 1px solid #a7a4a4;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    color: #222;
+    font-weight: 600;
+    line-height: 2vh;
+    text-align: center;
+}
+
+.sidebarLeftList {
+    list-style: none;
+}
+
+.sidebarCategoryItem {
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 5%;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sidebarCategoryItem:hover {
+    color: grey;
+}
+
+.sidebarStorageItem {
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 5%;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sidebarStorageItem:hover {
+    color: grey;
+}
