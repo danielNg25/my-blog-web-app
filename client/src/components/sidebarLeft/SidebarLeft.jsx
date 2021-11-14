@@ -21,7 +21,7 @@ export default function SidebarLeft() {
           {cats.map((c) => {
             return (
               <li className="sidebarCategoryItem">
-                <Link to="/it" className="link">
+                <Link to={`/?category=${c.name}`} className="link">
                   {c.name}
                 </Link>
               </li>
