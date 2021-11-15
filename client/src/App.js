@@ -4,7 +4,6 @@ import TopBar from "./components/topbar/TopBar";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Category from "./pages/category/Category";
 import Login from "./pages/login/Login";
 import { useContext } from "react";
 import { Context } from "./context/Contex";
@@ -18,28 +17,7 @@ function App() {
         <Route path="/" element={<Home />}>
           {" "}
         </Route>{" "}
-        <Route path="/it" element={<Category />}>
-          {" "}
-        </Route>{" "}
-        <Route path="/economy" element={<Category />}>
-          {" "}
-        </Route>{" "}
-        <Route path="/sport" element={<Category />}>
-          {" "}
-        </Route>{" "}
-        <Route path="/movie" element={<Category />}>
-          {" "}
-        </Route>{" "}
-        <Route path="/music" element={<Category />}>
-          {" "}
-        </Route>{" "}
-        <Route path="/book" element={<Category />}>
-          {" "}
-        </Route>{" "}
-        <Route path="/other" element={<Category />}>
-          {" "}
-        </Route>{" "}
-        <Route path="/about" element={<Category />}>
+        <Route path="/about" element={<Home />}>
           {" "}
         </Route>{" "}
         <Route path="/post/:postId" element={<Single />}>

@@ -1,61 +1,99 @@
-.singlePost{
-    flex: 10;
+.singlePost {
+  flex: 10;
 }
 
-.singlePostWrapper{
-    padding: 20px;
-    padding-right: 0;
+.singlePostWrapper {
+  padding: 20px;
+  padding-right: 0;
 }
 
-.singlePostImg{
-    width: 100%;
-    height:300px;
-    border-radius: 5px;
-    object-fit: cover;
+.singlePostImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
-.singlePostTitle{
-    text-align: center;
-    margin: 10px;
-    font-family: 'Lora', serif;
-    font-size: 20px;
+.singlePostTitle {
+  text-align: center;
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 20px;
 }
 
-.singlePostEdit{
-    float: right;
-    font-size: 16px;
+.singlePostTitleInput {
+  text-align: center;
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+}
+.singlePostTitleInput:focus {
+  outline: none;
 }
 
-.singlePostIcon{
-    margin-left: 10px;
+.singlePostDescInput {
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+}
+.singlePostDescInput:focus {
+  outline: none;
+}
+
+.singlePostEdit {
+  float: right;
+  font-size: 16px;
+}
+
+.singlePostIcon {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+  color: teal;
+}
+
+.singlePostIcon:last-child {
+  color: tomato;
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #b39656;
+  font-family: "Varela", sans-serif;
+}
+
+.singlePostDesc {
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singlePostDesc::first-letter {
+  margin-left: 5%;
+  font-size: 30px;
+  font-weight: 600;
+}
+.singlePostButton{
+    border: none;
+    color: white;
+    background-color: teal;
     cursor: pointer;
-}
-
-.singlePostIcon:first-child{
-    color: teal;
-}
-
-.singlePostIcon:last-child{
-    color: tomato;
-}
-
-.singlePostInfo{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #b39656;
-    font-family: 'Varela', sans-serif;
-}
-
-.singlePostDesc{
-    color: #666;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.singlePostDesc::first-letter{
-    margin: 5%;
-    font-size: 30px;
-    font-weight: 600;
+    border-radius: 10px;
+    padding: 2%;
+    align-self: flex-end;
+    margin-top: 5%;
 }

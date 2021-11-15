@@ -40,6 +40,16 @@
 .writeInput:focus{
     outline: none;
 }
+.writeCategory{
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+}
+
+.writeCategory:focus{
+    outline: none;
+}
 
 .writeText{
     font-size: 20px;
